@@ -1,0 +1,47 @@
+<!--
+	 Taylor Morrow - 300189738
+	 Sliding Puzzle Lab exercise
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset= "utf-8">
+		<title>Sliding Puzzle Game</title>
+		<style type="text/css">
+			img { padding: .2.5px; }
+		</style>
+		<script type="text/javascript" src="puzzleGame.js"></script>
+	</head>
+	<body onload="start(); refresh();">
+		<div>
+			<p>
+				<img id="0" src="images/0.jpg" onclick="move(this.id);">
+				<img id="1" src="images/1.jpg" onclick="move(this.id);">
+				<img id="2" src="images/2.jpg" onclick="move(this.id);">
+				<img id="3" src="images/3.jpg" onclick="move(this.id);">
+			</br>
+				<img id="4" src="images/4.jpg" onclick="move(this.id);">
+				<img id="5" src="images/5.jpg" onclick="move(this.id);">
+				<img id="6" src="images/6.jpg" onclick="move(this.id);">
+				<img id="7" src="images/7.jpg" onclick="move(this.id);">
+			</br>
+				<img id="8" src="images/8.jpg" onclick="move(this.id);">
+				<img id="9" src="images/9.jpg" onclick="move(this.id);">
+				<img id="10" src="images/10.jpg" onclick="move(this.id);">
+				<img id="11" src="images/11.jpg" onclick="move(this.id);">
+			</br>
+				<img id="12" src="images/12.jpg" onclick="move(this.id);">
+				<img id="13" src="images/13.jpg" onclick="move(this.id);">
+				<img id="14" src="images/14.jpg" onclick="move(this.id);">
+				<img id="15" src="images/blank.jpg" onclick="move(this.id);">
+			</p>
+			<strong>Number of Clicks: <span id='clicks'>0</span></strong>
+			</br>
+			<strong><span id='message'></span></strong>
+		</div>
+		<p>
+			<input type="button" value="Start!" onclick="shuffle()">		
+		</p>
+	</body>
+</html>
